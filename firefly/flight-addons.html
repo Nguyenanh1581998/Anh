@@ -1,0 +1,910 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome | Firefly</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/fav.ico">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.datepicker.css">
+    <link rel="stylesheet" href="css/icons.css">
+    
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome styles (icons) -->
+    <link rel="stylesheet" href="css/font_awesome.css">
+    <!-- Main Template styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- IE 8 Fallback -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css" />
+    <![endif]-->
+    <!-- Your custom styles (blank file) -->
+    <link rel="stylesheet" href="css/firefly-theme.css">
+</head>
+
+<body class="boxed">
+    <div class="global-wrap">
+        <div class="top-main-area text-center">
+            <div class="container">
+                <a href="index.html" class="logo mt5">
+                    <img src="images/logo.png" alt="Image Alternative text" title="Image Title" />
+                </a>
+                <div class="flexnav-menu-button pull-right" id="flexnav-menu-button">Menu</div>
+            </div>
+        </div>
+		<div class="search-area user-detail-panel">
+            <div class="container">
+                <nav class="user-panel">
+              <ul class="pre-details">
+              	<li class="user-details">
+                	<span class="user-avatar">
+                    	<span class="icon-user"></span>
+                    </span>
+                    <span class="user-name">Hi, bradley cooper</span>
+                </li>
+                <li>
+                	<label>Your Trip to:</label>
+					<span>SYDNEY (SYD)</span>
+                </li>
+                <li>
+                	<label>In 7 Days :</label>
+					<span>Monday, 07 -Dec, 2014</span>
+                </li>
+                <li>
+                	<label>Flight :</label>
+					<span>Firefly (FY3329)</span>
+                </li>
+              </ul>
+              <!--<ul class="pagination pull-right">
+                <li class="active">
+                	<a href="#"><span class="icon-airplane"></span></a>
+                </li>
+                <li>
+                	<a href="#"><span class="icon-clock"></span></a>
+                </li>
+                <li>
+                	<a href="#"><span class="icon-lock"></span></a>
+                </li>
+                <li>
+                	<a href="#"><span class="icon-ellipsis"></span></a>
+                </li>
+              </ul>-->
+            </nav>
+            </div>
+        </div>
+        <header class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- MAIN NAVIGATION -->
+                        <nav>
+                            <ul class="nav nav-pills flexnav flexnav-icons lg-screen" id="flexnav" data-breakpoint="800">
+                            	<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                                <li  class="active"><a href="flight-addons.html"><i class="fa fa-plane"></i> Airline Product</a></li>
+                                <li><a href="travel-products.html"><i class="fa fa-suitcase"></i> Travelling Product</a></li>
+                                <li><a href="shopping-home.html"><i class="fa fa-shopping-cart"></i> Misc Products</a></li>
+                            </ul>
+                        </nav>
+                        <!-- END MAIN NAVIGATION -->
+                    </div>
+                    <div class="col-md-3">
+                        <!-- LOGIN REGISTER LINKS -->
+                            <ul class="login-register">
+                                <li class="shopping-cart"><a href="payment.html"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                                    <div class="shopping-cart-box">
+                                        <ul class="shopping-cart-items">
+                                            <li>
+                                                <a href="product-shop-sidebar.html">
+                                                    <img src="img/70x70.png" alt="Image Alternative text" title="AMaze" />
+                                                    <h5>New Glass Collection</h5><span class="shopping-cart-item-price">$150</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="product-shop-sidebar.html">
+                                                    <img src="img/70x70.png" alt="Image Alternative text" title="Gamer Chick" />
+                                                    <h5>Playstation Accessories</h5><span class="shopping-cart-item-price">$170</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-inline text-center">
+                                            <li><a href="page-cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                                            </li>
+                                            <li><a href="page-checkout.html"><i class="fa fa-check-square"></i> Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="page-my-account-settings.html"><i class="fa fa-user"></i>My Account</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+        <!-- LOGIN REGISTER LINKS CONTENT -->
+        <div id="login-dialog" class="mfp-with-anim mfp-hide mfp-dialog clearfix">
+            <i class="fa fa-sign-in dialog-icon"></i>
+            <h3>Member Login</h3>
+            <h5>Welcome back, friend. Login to get started</h5>
+            <form class="dialog-form">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="email@domain.com" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="My secret password" class="form-control">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Remember me
+                    </label>
+                </div>
+                <input type="submit" value="Sign in" class="btn btn-primary">
+            </form>
+            <ul class="dialog-alt-links">
+                <li><a class="popup-text" href="#register-dialog" data-effect="mfp-zoom-out">Not member yet</a>
+                </li>
+                <li><a class="popup-text" href="#password-recover-dialog" data-effect="mfp-zoom-out">Forgot password</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="register-dialog" class="mfp-with-anim mfp-hide mfp-dialog clearfix">
+            <i class="fa fa-edit dialog-icon"></i>
+            <h3>Member Register</h3>
+            <h5>Ready to get best offers? Let's get started!</h5>
+            <form class="dialog-form">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="email@domain.com" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="My secret password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Repeat Password</label>
+                    <input type="password" placeholder="Type your password again" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label>Your Area</label>
+                            <input type="password" placeholder="Boston" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Postal/Zip</label>
+                            <input type="password" placeholder="12345" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Get hot offers via e-mail
+                    </label>
+                </div>
+                <input type="submit" value="Sign up" class="btn btn-primary">
+            </form>
+            <ul class="dialog-alt-links">
+                <li><a class="popup-text" href="#login-dialog" data-effect="mfp-zoom-out">Already member</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="password-recover-dialog" class="mfp-with-anim mfp-hide mfp-dialog clearfix">
+            <i class="icon-retweet dialog-icon"></i>
+            <h3>Password Recovery</h3>
+            <h5>Fortgot your password? Don't worry we can deal with it</h5>
+            <form class="dialog-form">
+                <label>E-mail</label>
+                <input type="text" placeholder="email@domain.com" class="span12">
+                <input type="submit" value="Request new password" class="btn btn-primary">
+            </form>
+        </div>
+        <!-- END LOGIN REGISTER LINKS CONTENT -->
+
+
+
+        <!-- User pre details -->
+        
+        <!-- User pre details -->
+        <div class="gap gap-small"></div>
+        <div class="container">
+        	<div class="row">
+            	<div class="col-md-8">
+                	<h2 class="panel-title custom-title mb20"><a data-toggle="collapse" data-parent="#accordion" href="#meals">Add your Meals</a></h2>
+                    <div class="row in" id="meals">
+                    	<div class="col-sm-6 col-xs-12">
+                        	<h3><i class="icon rnd-default icon-airplane2"></i> KUL - SYD</h3>
+                            <div class="addons">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add added icon-checkmark pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add added icon-checkmark pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons ">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons ">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                        	<h3><i class="icon rnd-default reverse icon-airplane2"></i> SYD - KUL</h3>
+                            <div class="addons  return-addons">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons return-addons shadow">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons return-addons shadow">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                            <div class="addons return-addons shadow">
+                            	<div class="addon-title">Chicken Combo with rice <span class="icon add icon-plus pull-right"></span></div>
+                                
+                                <figure class="pull-left">
+                                	<img src="images/meal.jpg">
+                                </figure>
+                                <p class="addon-price">
+                                    <select>
+                                        <option>1 item</option>
+                                        <option>2 items</option>
+                                        <option>3 items</option>
+                                        <option>4 items</option>
+                                        <option>5 items</option>
+                                    </select>
+                                    <label> RM 23.00</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap gap-small"></div>
+                    <h2 class="panel-title custom-title mb20"><a data-toggle="collapse" data-parent="#accordion" href="#baggage">Add your Baggage</a></h2>
+                    <div class="row in" id="baggage">
+                    	<div class="col-sm-6 col-xs-12">
+                        	<h3><i class="icon rnd-default icon-airplane2"></i> Depature Flight Baggage</h3>
+                            <div class="addons">
+                            	<span class="addon-title no-margin">
+                                	Checked baggage
+                                </span>
+                                <label class="pull-left">RM 123</label>
+                                <div class="addon-items pull-right">
+                                	<span class="minus">-</span>
+                                    <label>30 Kg</label>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                            <div class="addons">
+                            	<span class="addon-title no-margin">
+                                	Sports Equipment
+                                </span>
+                                 <label class="pull-left">RM 123</label>
+                                <div class="addon-items pull-right">
+                                	<span class="minus">-</span>
+                                    <label>30 Kg</label>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                        	<h3><i class="icon rnd-default reverse icon-airplane2"></i> Return Flight Baggage</h3>
+                            <div class="addons  return-addons">
+                            	<span class="addon-title no-margin">
+                                	Checked baggage
+                                </span>
+                                 <label class="pull-left">RM 123</label>
+                                <div class="addon-items pull-right">
+                                	<span class="minus">-</span>
+                                    <label>30 Kg</label>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                            <div class="addons  return-addons">
+                            	<span class="addon-title no-margin">
+                                	Sports Equipment
+                                </span>
+                                 <label class="pull-left">RM 123</label>
+                                <div class="addon-items pull-right">
+                                	<span class="minus">-</span>
+                                    <label>30 Kg</label>
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap gap-small"></div>
+                    <h2 class="panel-title custom-title mb20"><a data-toggle="collapse" data-parent="#accordion" href="#seats">Seat Selection</a></h2>
+                    <div class="seat-selection in" id="seats">
+                        <ul class="legends">
+                            <li><em class="eco-seat"></em>Available Economy class</li>
+                            <li><em class="bus-seat"></em>Available Business class</li>
+                            <li><em class="sel-seat"></em>Selected Seat</li>
+                            <li><em class="unavail-seat"></em>Unavailable Seats</li>
+                            <li><em class="res-seat"></em>Reserved Seats</li>
+                        </ul>
+                        <div class="row">
+                        	<div class="seat-clm depart-clm">
+                            	<div class="selection-details">
+                                	<h3><i class="icon rnd-default icon-airplane2"></i> Depature Flight</h3>
+                                    <p>
+                                    	<span>Selected Seat(s) : <em class="eco-text">C01</em>, <em class="bus-text">B01</em> (2 seats)</span>
+                                        <label>Class : Economy, Business</label>
+                                    </p>
+                                </div>
+                                <div class="flight-structure">
+                                	<div class="flight-label">
+                                    	<span class="label label-default">Flight Cockpit</span>
+                                    </div>
+                                    <div class="section-divider"></div>
+                                    <div class="flight-label">
+                                    	<label>Business class</label>
+                                    </div>
+                                    <div class="seat-section left-side">
+                                    	<ul class="column-name">
+                                        	<li>A</li>
+                                            <li>B</li>
+                                            <li>C</li>
+                                        </ul>
+                                        <ul class="seats cabin-1">
+                                        	<li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="row-number">
+                                    	<li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                    <div class="seat-section right-side">
+                                    	<ul class="column-name">
+                                        	<li>D</li>
+                                            <li>E</li>
+                                            <li>F</li>
+                                        </ul>
+                                        <ul class="seats cabin-1">
+                                        	<li><span class="unavailable">B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span class="unavailable">B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="section-divider"></div>
+                                    <div class="flight-label">
+                                    	<label>Economy class</label>
+                                    </div>
+                                    <div class="seat-section left-side">
+                                    	<ul class="column-name">
+                                        	<li>A</li>
+                                            <li>B</li>
+                                            <li>C</li>
+                                        </ul>
+                                        <ul class="seats cabin-2">
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                             <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="row-number">
+                                    	<li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                    </ul>
+                                    <div class="seat-section right-side">
+                                    	<ul class="column-name">
+                                        	<li>D</li>
+                                            <li>E</li>
+                                            <li>F</li>
+                                        </ul>
+                                        <ul class="seats cabin-2">
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span class="unavailable">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                 <div class="clm-divider"></div>
+                            </div>
+                           
+                            <div class="seat-clm return-clm disabled">
+                            	<div class="selection-details">
+                            		<h3><i class="icon rnd-default reverse icon-airplane2"></i> Return Flight</h3>
+                                    <p>
+                                    	<span>Selected Seat(s) : <em class="eco-text">C01</em>, <em class="bus-text">B01</em> (2 seats)</span>
+                                        <label>Class : Economy, Business</label>
+                                    </p>
+                                </div>
+                                <div class="flight-structure">
+                                	<div class="flight-label">
+                                    	<span class="label label-default">Flight Cockpit</span>
+                                    </div>
+                                    <div class="section-divider"></div>
+                                    <div class="flight-label">
+                                    	<label>Business class</label>
+                                    </div>
+                                    <div class="seat-section left-side">
+                                    	<ul class="column-name">
+                                        	<li>A</li>
+                                            <li>B</li>
+                                            <li>C</li>
+                                        </ul>
+                                        <ul class="seats cabin-1">
+                                        	<li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="row-number">
+                                    	<li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                    <div class="seat-section right-side">
+                                    	<ul class="column-name">
+                                        	<li>D</li>
+                                            <li>E</li>
+                                            <li>F</li>
+                                        </ul>
+                                        <ul class="seats cabin-1">
+                                        	<li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                            <li><span>B</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="section-divider"></div>
+                                    <div class="flight-label">
+                                    	<label>Economy class</label>
+                                    </div>
+                                    <div class="seat-section left-side">
+                                    	<ul class="column-name">
+                                        	<li>A</li>
+                                            <li>B</li>
+                                            <li>C</li>
+                                        </ul>
+                                        <ul class="seats cabin-2">
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                    </div>
+                                    <ul class="row-number">
+                                    	<li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                    </ul>
+                                    <div class="seat-section right-side">
+                                    	<ul class="column-name">
+                                        	<li>D</li>
+                                            <li>E</li>
+                                            <li>F</li>
+                                        </ul>
+                                        <ul class="seats cabin-2">
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                        	<li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span class="disabled">E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li class="unavailable"><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li class="unavailable"><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                             <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                            <li><span>E</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                	<div class="panel-default panel">
+                    	<div class="panel-heading">
+                        	<h3>Product Summary</h3>
+                        </div>
+                        <div class="panel-body">
+                        	<div class="price-summary">
+                                 <h4><i class="icon rnd-default icon-food"></i> Meals</h4>
+                            	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td>Chicken Combo with rice</td>
+                                    <td>RM 23.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Veg Combo with rice</td>
+                                    <td>MYR  29.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Chicken Combo with Noodles</td>
+                                    <td>MYR  29.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="sub-total">Meals Total</td>
+                                    <td class="sub-total">MYR  29.00</td>
+                                  </tr>
+                                </table>
+                                <h4><i class="icon rnd-default icon-suitcase"></i> Baggage</h4>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td>30Kg Baggage</td>
+                                    <td>RM 23.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>20Kg Sports Equipment</td>
+                                    <td>MYR  29.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="sub-total">Baggage Total</td>
+                                    <td class="sub-total">MYR  29.00</td>
+                                  </tr>
+                                </table>
+                                 <h4>Seat Selection</h4>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td>Depart Flight <br> BC2 (Business class)</td>
+                                    <td>RM 23.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Return Flight <br> BC2 (Business class)</td>
+                                    <td>MYR  29.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="sub-total">Seat Total</td>
+                                    <td class="sub-total">MYR  29.00</td>
+                                  </tr>
+                                </table>
+                                <div class="total">
+                                    <span>Total Addons Price</span>
+                                    <span class="pull-right">RM 129.00</span>
+                                </div>
+                                <!--<button type="button" class="btn btn-primary btn-lg btn-block">Pay Now</button>-->
+                                <a href="payment.html" class="btn btn-primary btn-lg btn-block">Pay Now</a> <!-- just for html referance -->
+                            </div>
+                        </div>
+                    </div>
+                    		
+                    		
+                		</div>
+            </div>
+            
+        </div>
+
+
+        <!-- //////////////////////////////////
+	//////////////END PAGE CONTENT///////// 
+	////////////////////////////////////-->
+
+
+
+        <!-- //////////////////////////////////
+	//////////////MAIN FOOTER////////////// 
+	////////////////////////////////////-->
+
+        <footer>
+    	<div class="container">
+            <div class="row">
+                <div class="col-sm-12 dash-brd-top">
+                	<div class="links pull-right">
+                        <a href="#">About This Site</a>  |  <a href="#">Privacy Policy</a>  |  
+                        <a href="#">Legal Notice</a>  |  <a href="#">General Conditions Of Cariage</a>  |  <a href="#">Sitemap</a>
+                  	</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+        	<div class="container">
+            	<p>
+                	<img src="images/firefly-small-logo.png" class="pull-left">
+                	<a href="#">FlyFirefly</a> Sdn. Bhd. is a wholly-owned subsidiary of Malaysian Airline System Berhad. (10601-W)<br>
+					&copy; 2012 <a href="#">FlyFirefly</a> Sdn Bhd (346606-K) formerly known as MAS Sdn Bhd. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+ 
+        
+        <!-- Scripts queries -->
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="js/boostrap.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/flexnav.min.js"></script>
+        <script src="js/magnific.js"></script>
+        <script src="js/tweet.min.js"></script>
+        <script src="js/fitvids.min.js"></script>
+        <script src="js/mail.min.js"></script>
+        <script src="js/ionrangeslider.js"></script>
+        <script src="js/icheck.js"></script>
+        <script src="js/fotorama.js"></script>
+        <script src="js/card-payment.js"></script>
+        <script src="js/owl-carousel.js"></script>
+        <script src="js/masonry.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <!-- Custom scripts -->
+        <script src="js/custom.js"></script>
+        <script src="bootstrap/js/bootstrap-datepicker-init.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="js/page-script.js" type="text/javascript"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    </div>
+</body>
+
+</html>
